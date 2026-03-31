@@ -11,7 +11,7 @@ from telegram.ext import (
 # ─────────────────────────────────────────────
 #  CONFIG  — faqat shu ikki qatorni o'zgartiring
 # ─────────────────────────────────────────────
-BOT_TOKEN = "8018963742:AAEmQ4vHCNYZ48MbKEx2Y6EAfp6QArEBiEE"
+BOT_TOKEN = "8018963742:AAHQiG7DOmcWsJirtd91lmTUVsFKCjXdzmg"
 ADMIN_IDS = [705457366, 5427459567, 433236357]
 # ─────────────────────────────────────────────
 
