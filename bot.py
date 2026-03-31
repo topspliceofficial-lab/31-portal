@@ -51,7 +51,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(
         "👋 *Maktab Anonim Portaliga xush kelibsiz\\!\n\n*"
         "Bu yerda istalgan muammo, shikoyat yoki taklifingizni "
-        "mutlaqo anonim tarzda yuborishingiz mumkin\\.\n\n"
+        "yuborishingiz mumkin\\.\n\n"
         "Boshlash uchun pastdagi tugmani bosing 👇",
         parse_mode="MarkdownV2",
         reply_markup=MAIN_KEYBOARD,
@@ -61,7 +61,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(
         "ℹ️ *Qanday ishlaydi?*\n\n"
-        "1\\. *📝 Anonim xabar yuborish* tugmasini bosing\n"
+        "1\\. *📝 Xabar yuborish* tugmasini bosing\n"
         "2\\. Xabaringizni yozing va yuboring\n"
         "3\\. Tayyor\\!\n\n"
         "✅ Hech qanday ro'yxatdan o'tish kerak emas\\.\n"
@@ -85,13 +85,13 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     user_id = user.id
     text = update.message.text
 
-    if text == "📝 Anonim xabar yuborish":
+    if text == "📝 Xabar yuborish":
         await button_pressed(update, context)
         return
 
     if user_id not in WAITING_FOR_MESSAGE:
         await update.message.reply_text(
-            "Xabar yuborish uchun *📝 Anonim xabar yuborish* tugmasini bosing\\.",
+            "Xabar yuborish uchun *📝 Xabar yuborish* tugmasini bosing\\.",
             parse_mode="MarkdownV2",
             reply_markup=MAIN_KEYBOARD,
         )
