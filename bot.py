@@ -11,8 +11,8 @@ from telegram.ext import (
 # ─────────────────────────────────────────────
 #  CONFIG  — faqat shu uch qatorni o'zgartiring
 # ─────────────────────────────────────────────
-BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"          # @BotFather dan olgan token
-ADMIN_IDS = [123456789, 987654321]         # Ikki adminning Telegram ID'lari
+BOT_TOKEN = "8018963742:AAEmQ4vHCNYZ48MbKEx2Y6EAfp6QArEBiEE"          # @BotFather dan olgan token
+ADMIN_IDS = [705457366, 5427459567, 433236357]         # Ikki adminning Telegram ID'lari
 # ─────────────────────────────────────────────
 
 logging.basicConfig(
